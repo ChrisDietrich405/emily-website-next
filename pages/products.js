@@ -1,3 +1,5 @@
+import styles from "../styles/products.module.css";
+
 const Products = () => {
   return (
     <div>
