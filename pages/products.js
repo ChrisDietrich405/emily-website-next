@@ -1,8 +1,8 @@
-import styles from "../styles/products.module.css";
+import styles from "../styles/Products.module.css";
 
 const Products = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Products</h1>
     </div>
   );
