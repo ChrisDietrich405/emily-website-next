@@ -1,3 +1,4 @@
+import Cards from "../Cards";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import Slideshow from "../Slideshow";
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
     <div className={styles.content}>
       <Navbar />
       <Slideshow />
+      <Cards />
       {children}
       <Footer />
     </div>
