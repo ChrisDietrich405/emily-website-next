@@ -43,7 +43,7 @@ export default function Slideshow() {
                 : styles.slideshow_image_inactive
             }
           >
-            <Image src={image} width={1200} height={600} />
+            <Image src={image} width={1500} height={600} />
           </div>
         ))}
       </div>
