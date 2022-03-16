@@ -28,7 +28,7 @@ export default function Slideshow() {
         setIndex(index + 1);
       }
     }, 3000);
-    console.log("gekki", interval);
+
     return () => clearInterval(interval);
   }, [index, pause]);
 
@@ -36,21 +36,25 @@ export default function Slideshow() {
     <div className="slideshow-container">
       <div className="slideshow">
         {imageArray.map((image, i) => (
-          // <img
-          //   className={`${index === i ? "active" : "inactive"} slideshow-image`}
-          //   src={image}
-          // ></img>
-          <Image
-            src="/chickpeas.jpg"
-            className={styles.slideshow_image}
-            width={1200}
-            height={600}
-          />
+          <div
+            className={
+              i === index
+                ? styles.slideshow_image_active
+                : styles.slideshow_image_inactive
+            }
+          >
+            <Image src={image} width={1200} height={600} />
+          </div>
         ))}
       </div>
     </div>
   );
 }
+
+// <img
+//   className={`${index === i ? "active" : "inactive"} slideshow-image`}
+//   src={image}
+// ></img>
 
 // import { useState, useEffect } from "react";
 

@@ -1,13 +1,14 @@
 .container {
   padding-top: 100px;
+  background: purple;
 }
 
-.slideshow_image {
+.slideshow_image_active {
   margin: 0 auto 100px;
   width: 100%;
-  height: 120px;
+  height: 1020px;
 }
 
-.inactive {
+.slideshow_image_inactive {
   display: none;
 }
