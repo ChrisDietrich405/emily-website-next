@@ -1,6 +1,6 @@
 import Cards from "../Cards";
 import Footer from "../Footer";
-import Navbar from "../Navbar";
+import Header from "../Header";
 import Slideshow from "../Slideshow";
 
 import styles from "./styles.module.css";
@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 const Layout = ({ children }) => {
   return (
     <div className={styles.content}>
-      <Navbar />
+      <Header />
       <Slideshow />
       <Cards />
       {children}
