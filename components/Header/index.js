@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import SocialIcons from "../SocialIcons";
 
 import styles from "./styles.module.css";
@@ -22,38 +21,22 @@ const Header = () => {
                 <Link href="/">
                   <a>Home</a>
                 </Link>
-                {/* <Link to="/">Home</Link> */}
               </li>
               <li className="header-list-item">
-                <Link href="/recipes">
+                <Link href="/Recipes">
                   <a>Recipes</a>
                 </Link>
-                {/* <Link to="/recipes">Recipes</Link> */}
               </li>
               <li className="header-list-item">
-                <Link href="/contact">
+                <Link href="/Contact">
                   <a>Contact</a>
                 </Link>
-                {/* <Link to="/contact">Contact</Link> */}
               </li>
+
               <li className="header-list-item">
-                {/* <Link to="/services">
-                  Services{" "}
-                  <div className={styles.dropdown_content}>
-                    <Link>stuff</Link>
-                    <Link>some other stuff</Link>
-                    <Link>more stuff</Link>
-                  </div>
-                </Link> */}
-              </li>
-              <li className="header-list-item">
-                {/* <Link to="/blogs">
-                  Blogs{" "}
-                  <div className={styles.dropdown_content}>
-                    <Link>stuff</Link>
-                    <Link>some other stuff</Link>
-                  </div>
-                </Link> */}
+                <Link href="/Blogs">
+                  <a>Blogs</a>
+                </Link>
               </li>
             </ul>
           </div>

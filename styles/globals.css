@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
-li {
+body {
+  padding-top: 120px;
+}
+
+ul {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
